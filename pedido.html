@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viweport" content="width-device-width, initial-scalet-1.0">
+        <title>El Postre</title>
+
+        <style>
+            body{ background-color: #DAF2E3;
+            }
+            .box {
+                background-color: #8CE5B8;
+                width: 100%;
+            }
+            .barra{
+                width: 60%;
+	            height: 50px;
+            }
+
+            .button {
+                background-color: white; 
+                border: 2px solid #8CE5B8;
+                color: #000000;
+                border-radius: 6px;
+                padding: 10px 32px;
+                text-align: center;
+                display: inline-block;
+                font-size: 15px;
+            }
+
+            
+        </style>
+    </head>
+
+    
+    <body>
+        
+        <div align="center"><img src="C:\Users\merce\Desktop\LILIA\LAUNCH X\imagenes\LOGO_PASTE.png"  alt="logo pasteleria" width="250px" ></div> 
+        <h2 align="center" >Por favor rellena el siguiente formulario para realizar tu pedido</h2>
+     <form action="pedido.js">   
+        <div align="center" >
+            <table>
+                <tr>
+                    <th></th>
+                    <th></th>
+                </tr>
+                <tr>
+                <td><label for="nombre">Nombre Completo: </label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre" >
+                    <br><br>
+                </td>
+                <td>
+                <label for="phone">Número de teléfono: </label>
+                <input type="phone" id="phone" name="phone"  maxlength="10" >
+                <br><br>
+                </td>
+                </tr>
+                <tr>
+                <td><label for="correo">Correo electrónico: </label>
+                    <input type="email" id="email" name="email"  >
+                    <br><br>
+                </td>
+                <td><label for="descripcion">Descripción adicional: </label>
+                    <input type="text" name="descripcion" size="20"></textarea>
+                    <br><br>
+                </td>
+                </tr>
+            </table>
+       </div>
+
+        <div align="center">
+            <table>
+               <tr>
+                   <td></td>
+                   <td>
+                    <fieldset>
+                    <legend>Elige el tamaño</legend>
+                    <input type="radio" id="individual" name="tamanio" value="Individual">
+                    <label for="individual">Individual</label> <br>
+                    <input type="radio" id="8-10" name="tamanio" value="8-10">
+                    <label for="8-10 personas">8-10 personas</label> <br>
+                    <input type="radio" id="12-16" name="tamanio" value="12-16">
+                    <label for="12-16">12-16 personas</label> <br>
+                    <input type="radio" id="18-30" name="tamanio" value="18-30">
+                    <label for="18-30">18-30 personas</label><br>
+                    <input type="radio" id="50" name="tamanio" value="50">
+                    <label for="50">50 personas</label> <br>
+                    <input type="radio" id="100" name="tamanio" value="100">
+                    <label for="100">100 personas</label><br>
+                    <input type="radio" id="500" name="tamanio" value="500">
+                    <label for="500">500 pesonas</label> <br>
+                    </fieldset>
+                   </td>
+                   <td align="rigth">
+                    <fieldset>
+                    <legend>Elige el sabor</legend>
+                    <input type="checkbox" id="caramelo" name="caramelo" value="caramelo">
+                    <label for="mercurio">Caramelo</label> 
+                    <img src="C:\Users\merce\Desktop\LILIA\LAUNCH X\imagenes\caramelo.png"  alt="caramelo" width="35spx" > <br>
+                    <input type="checkbox" id="chocolate" name="chocolate" value="chocolate">
+                    <label for="chocolate">Chocolate</label> 
+                    <img src="C:\Users\merce\Desktop\LILIA\LAUNCH X\imagenes\chocolate.png"  alt="chocolate" width="35spx" > <br>
+                    <input type="checkbox" id="red" name="red" value="red">
+                    <label for="red">Red Velvet</label>
+                    <img src="C:\Users\merce\Desktop\LILIA\LAUNCH X\imagenes\red.png"  alt="redvelvet" width="35spx" > <br>
+                    <input type="checkbox" id="vainilla" name="vainilla" value="vainilla">
+                    <label for="vainilla">Vainilla</label>
+                    <img src="C:\Users\merce\Desktop\LILIA\LAUNCH X\imagenes\vainilla.png"  alt="vainilla" width="35spx" > <br>
+                    <input type="checkbox" id="zan+" name="zanahoria" value="zanahoria">
+                    <label for="zanahoria">Zanahoria</label> 
+                    <img src="C:\Users\merce\Desktop\LILIA\LAUNCH X\imagenes\zanahoria.png"  alt="zanahoria" width="35px" > <br>
+                    </fieldset>
+                    </td>
+                    <td align="rigth">
+                        <fieldset>
+                        <legend>Elige los adornos</legend>
+                            <input type="checkbox" id="bautizo" name="bautizo" value="bautizo">
+                            <label for="bautizo">Bautizo</label> 
+                            <img src="C:\Users\merce\Desktop\LILIA\LAUNCH X\imagenes\bautizo.png"  alt="caramelo" width="35spx" > <br>
+                            <input type="checkbox" id="boda1" name="boda1" value="boda1">
+                            <label for="bodaop1">Boda opción 1</label> 
+                            <img src="C:\Users\merce\Desktop\LILIA\LAUNCH X\imagenes\boda1.jpg"  alt="boda1" width="35spx" > <br>
+                            <input type="checkbox" id="boda2" name="boda2" value="boda2">
+                            <label for="boda2">Boda opción 2</label>
+                            <img src="C:\Users\merce\Desktop\LILIA\LAUNCH X\imagenes\boda2.jpg"  alt="boda2" width="35spx" > <br>
+                            <input type="checkbox" id="cumple" name="cumple" value="cumple">
+                            <label for="cumple">Feliz Cumpleaños</label>
+                            <img src="C:\Users\merce\Desktop\LILIA\LAUNCH X\imagenes\felizc.jpg"  alt="graduacion" width="35spx" > <br>
+                            <input type="checkbox" id="graduacion" name="graduacion" value="graduacion">
+                            <label for="graduacion">Gración</label> 
+                            <img src="C:\Users\merce\Desktop\LILIA\LAUNCH X\imagenes\graduacion.jpg"  alt="graduacion" width="35px" > <br>
+                        </fieldset>
+                        <td align="rigth">
+                        <fieldset>
+                        <legend>Elige las velas</legend>
+                            <input type="checkbox" id="vela1" name="vela1" value="vela1">
+                            <label for="vela1">Vela chispas</label> 
+                            <img src="C:\Users\merce\Desktop\LILIA\LAUNCH X\imagenes\vela1.jpg"  alt="vela1" width="35px" > <br>
+                            <input type="checkbox" id="vela2" name="vela2" value="vela2">
+                            <label for="vela2">Vela nuúmero</label> 
+                            <img src="C:\Users\merce\Desktop\LILIA\LAUNCH X\imagenes\vela2.jpg"  alt="vela2" width="35px" > <br>
+                            <input type="checkbox" id="vela3" name="vela3" value="vela3">
+                            <label for="vela3">Vela musical</label> 
+                            <img src="C:\Users\merce\Desktop\LILIA\LAUNCH X\imagenes\velaM.jpg"  alt="vela3" width="35px" > <br>
+                       </fielset>
+                        </td>
+                </tr>
+            </table>
+            <br><br>
+            <a href="./pasteleria.html">
+                <input type="button" class="button" value="Enviar Pedido">
+             </a>
+        </div>
+
+
+     </form>   
+        
+   
+        <br><br>
+        <div class="box" align="center">
+            <table class="barra">
+                <tr>
+                    <th><img src="C:\Users\merce\Desktop\LILIA\LAUNCH X\imagenes\ubicacion.png"  alt="ubicacion" width="15spx" > Dirección</th>
+                    <th><img src="C:\Users\merce\Desktop\LILIA\LAUNCH X\imagenes\telefono.png"  alt="telefono" width="15px" > Teléfonos</th>
+                    <th><img src="C:\Users\merce\Desktop\LILIA\LAUNCH X\imagenes\horario.png"  alt="horarios" width="30px" > Horario</th>
+                </tr>
+                <tr>
+                    <td align="center"> Calle Camino Nacional #100 <br> Colonia Santa Rosa CP:68010</td>
+                    <td align="center">951-350-24-99 <br> (951) 207- 83-51</td>
+                    <td align="center">Sábados de 10 am a 4:00 pm</td>
+                </tr>
+             </table>
+        </div>
+       
+    </body>
+</html>
